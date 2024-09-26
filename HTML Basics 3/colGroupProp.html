@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table ,tr,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    Q1. Col 1,2,3->Greenyellow <br>
+    Q2. Col 2, 3->yellow <br>
+    Q3. Col 2,4-> Red <br>
+    <table>
+        <!-- <colgroup>
+            <col span="3" style="background-color: greenyellow;">
+        </colgroup> -->
+
+        <!-- <colgroup>
+            <col span="1">
+            <col span="3" style="background-color: yellow;">
+        </colgroup> -->
+
+        <colgroup>
+            <col span="1">
+            <col span="1" style="background-color: red;">
+            <col span="1">
+            <col span="1" style="background-color: red;">
+            <col span="1" style="visibility: collapse;">
+        </colgroup>
+
+        <tr>
+            <td>Col 1</td>
+            <td>Col 2</td>
+            <td>Col 3</td>
+            <td>Col 4</td>
+            <td>Col 5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!-- NOTES
+ <col span="1" style="visibility: collapse;"> using this we hide last column 
+ When i have to use a content that is from another website, I use BlockQuote tag and give the link of site in cite attribute
+ HOMEWORK: Read last page of HTML Cheatsheet-->
