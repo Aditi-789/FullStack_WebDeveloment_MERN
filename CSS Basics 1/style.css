@@ -1,0 +1,42 @@
+/* Element Selector */
+h1{
+    background-color: yellowgreen;
+}
+
+/* class selector */
+.para{
+    background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* id-selector */
+#link{
+    color: blue;
+}
+/* Pseudo-class selector */
+button:hover{
+    color: red;
+}
+
+#link:hover{
+    color: green;
+}
+
+/* Multiple-selector */
+/* the same we did for designing table earlier */
+
+/* Universal-selector */
+*{
+    font-family: cursive;
+}
+
+/* Nested-Selector */
+div{
+    color: red;
+    & h2{
+        color: green;
+    }
+}
+/* similarly can do using class and id also */
+
+/* Attribute-selector -> explore mdn*/

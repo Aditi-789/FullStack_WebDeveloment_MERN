@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 200px;
+            border: 1px solid black;
+            margin-top: 10px; margin-bottom: 10px;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+        /* RGB colour scheme */
+        #org{
+            background-color: rgb(255, 165, 0);
+        }
+        /* hexadecimal colour system */
+        #wht{
+            background-color: #FFFFFF;
+        }
+        /* predefined colours */
+        #grn{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="org">Indian</div>
+    <div class="box" id="wht">National</div>
+    <div class="box" id="grn">Flag</div>
+</body>
+</html>
+
+<!-- NOTES:- 
+space between content and border: padding
+space between two elements(boxes) : margin 
+content>padding>border>margin 
+
+box-sizing: border-box; karne se jab hum padding apply krte h to box ka size 
+bada nhi hota rather content ka size(height,width) chota hojata h, so that 
+box ka size change na ho
+
+Percentage unit : x% of parent's size
+
+em -> relative to parent element font size
+parent : 18px , child = 2em means 2*18=36px
+
+rem -> relative to root element(html)
+
+vw = 1/100th of width of viewport
+vh = 1/100th of heigth of viewport
+
+Q. What is the difference between 1% and 1 vw?
+1% depends on the dimensions of the parent element, 1vw is based on the entire browser window's width.
+-->
