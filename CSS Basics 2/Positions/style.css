@@ -1,0 +1,30 @@
+div{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 2000px;
+    background-color: skyblue;
+}
+#box1{
+    position:fixed;
+} 
+#box3{
+position: relative;
+top: 100px;
+}
+#box4{
+    position: sticky;
+    top: 0px;
+}
+
+
+
+/* Static position is default position
+relative position is relative to it's original position 
+absolute position is relative to nearest positioned element*/

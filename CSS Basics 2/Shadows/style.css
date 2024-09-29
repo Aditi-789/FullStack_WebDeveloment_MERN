@@ -1,0 +1,31 @@
+h1{
+    /* Horizontal,vertical shadows distance, blur value, colour */
+    text-shadow: 3px 3px 3px yellow;
+    /* multiple shadows */
+    text-shadow: 3px 3px 3px yellow,6px 6px 6px red;
+}
+
+.box{
+    background-color: yellowgreen;
+    color: purple;
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px;
+    /* shadow colour will be of colour of text */
+    /* for different colour:- */
+    box-shadow: 10px 10px pink;
+    /* multiple shadows */
+    box-shadow: 10px 10px 10px green, 15px 15px 20px brown;
+    /* by using negative values we can change direction of shadow */
+}
+/* .box1{
+    background-color: yellowgreen;
+    color: purple;
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 0 black,-1px -1px 0 black;
+} */
+
+/* HOMEWORK:-
+Q. How can we add border using shadows
+box-shadow: 1px 1px 0 black,-1px -1px 0 black; */

@@ -1,0 +1,23 @@
+.box{
+    background-color: aquamarine;
+    margin: 200px;
+    transform: translate(100px,20px);
+    transform: rotate(45deg);
+    transform: scale(2,3);
+    transform: skew(20deg);
+}
+
+/* The matrix() CSS property is part of the CSS transform property,
+ used for applying 2D transformations to elements. It allows you to define
+ complex transformations like scaling, rotating, translating (moving), and skewing elements
+ all at once. The matrix() function takes six parameters, which correspond to the elements
+ of a transformation matrix in a 2D space.
+ Syntax:
+ transform: matrix(a, b, c, d, e, f);
+Parameters:
+a: Horizontal scaling (stretching or compressing the element horizontally).
+b: Horizontal skewing.
+c: Vertical skewing.
+d: Vertical scaling (stretching or compressing the element vertically).
+e: Horizontal translation (moving the element along the x-axis).
+f: Vertical translation (moving the element along the y-axis).*/
