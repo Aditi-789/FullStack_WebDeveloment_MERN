@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+#logo img{
+width: 98px;
+height: 82px;
+gap: 0px;
+opacity: 0px;
+}
+header{
+    padding: 40px 60px 40px 80px;
+    background-color: #F3F4F6;
+    display: flex;
+    justify-content: space-between;
+}
+#navigation{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.options{
+    color:#777C85;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#btn{
+    color: white;
+    background-color: blue;
+    width: 165px;
+    height: 54px;
+    top: 54px;
+    border-radius: 5px;
+}
+.options:hover{
+    color: blue;
+    text-decoration: underline;
+}
+#wrapper{
+    background-color: #F3F4F6;
+    padding: 100px 60px 40px 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: space-between;
+    gap: 70px;
+}
+hr{
+    width: 230px;
+    margin: 0;
+}
+#img1{
+    width: 570px;
+    height: 427px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+#img2{
+    object-fit: cover;
+    width: 500px;
+    height: 480px;
+    border-radius: 30px;
+}
+.content{
+    top: 373px;
+    left: 117px;
+    opacity: 0.5; 
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2; 
+    text-align: left;
+    max-width: 100%; 
+    overflow: hidden; 
+}
+h2{
+    width: auto;
+    height: auto;
+    top: 266px;
+    left: 117px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 44.53px;
+    text-align: left;
+}
+#footlogo{
+    width: 98px;
+    height: 82px;
+    top: 1553px;
+    left: 80px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+#set p{
+    opacity: 0.5;
+}
+#footer{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
