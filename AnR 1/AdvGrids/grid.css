@@ -1,0 +1,24 @@
+.container{
+    height: 700px;
+    border: 1px solid red;
+    background-color: yellow;
+    display: grid;
+    grid-gap: 10px;
+
+    grid-auto-rows: minmax(100px,auto);
+    grid-template-columns: repeat(4,1fr);
+ }
+.box{
+    border: 1px solid green;
+    background-color: aqua;
+    /* height: 100px;
+    width: 100px; */
+}
+
+/* NOTES
+1. either we will use gtr or gar
+2. If we set gtr repeat(2, 1fr) then after 2 rows 
+new rows that we will add will squeeze
+3. GAR is used when no. of rows isn't fixed
+4. minmax to set min and max height of rows
+5. Grid-auto-columns*/

@@ -1,0 +1,35 @@
+.container{
+    border: 1px solid brown;
+    background-color: yellow;
+    height: 700px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px ;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: start;
+    align-items: stretch;
+    align-content: space-around ;
+}
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+}
+#box1{
+    justify-self: start;
+    align-self: center;
+}
+
+/* Justify-content, align-items these are for parent
+justify self align self are for box
+align content-> rows ke beech ki spacing
+align item -> vertical axis ke acc content kaise placed
+justify content ->  horizontal axis ke acc content kaise placeed
+justify self ,align self -> child item (container parent me ek child item uska content)ke
+andar jo content hai uske liye
+place content for justify content + align content shorthand
+place item : justify items align items ke liye
+place self for justify self and align self ke liye shorthand
+
+FIND OUT DIFFERENCE B/W GRID AND INLINE GRID*/
