@@ -1,0 +1,30 @@
+:root{
+    --dark-red:#981a2c;
+    /* global variable (can be accessed anywhere in style sheet) */
+}
+
+/* *{
+    --dark-red:#981a2c;
+    global variable (can be accessed anywhere in style sheet)
+} */
+
+
+.container{
+    border: 1px solid brown;
+    background-color: var(--dark-red);
+    height: 300px;
+    width: 300px;
+}
+
+.box{
+    border:2px solid green;
+    background-color: aqua;
+    /* --dark-red:#981a2c; */
+    color: var(--dark-red);
+    /* local variable (scope only inside box) */
+}
+
+/* Summary of Differences:
+:root: Truly global and accessible everywhere without relying on inheritance.
+*: Applied universally but subject to inheritance rules, which can limit its access under certain conditions.
+Using :root is generally preferred for CSS variables to ensure consistency and avoid potential issues with inheritance. */

@@ -1,0 +1,23 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    border: 3px solid red;
+    display: flex;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border: 2px solid orange;
+    background-color: aqua; 
+    transition: all 3s ease 1s;
+}
+.box:hover{
+    background-color: hotpink;
+    transform: translateX(500px) rotate(360deg) scale(2);
+}
+
+/* shorthand notation
+transition : property duration timingfunc delay */
