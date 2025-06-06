@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(background.png);
+    background-position: center;
+    background-size: cover ;
+    padding: 0 8%;
+    position: relative;
+}
+
+.logo{
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.content h1{
+    font-size:64px;
+    font-weight: 600;
+}
+
+.content h1 span{
+    color: #ff3753;
+}
+
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+}
+
+.launch-time {
+    display: flex;
+    gap: 30px;
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.1); /* transparent white */
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.launch-time div {
+    min-width: 90px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.launch-time div p {
+    font-size: 54px;
+    font-weight: 600;
+    margin: 0;
+    color: #fefae0; /* soft cream text */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
