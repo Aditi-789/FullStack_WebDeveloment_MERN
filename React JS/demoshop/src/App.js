@@ -1,27 +1,39 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import './components/Item';
-import Item from './components/Item';
-import ItemDate from './components/ItemDate';
+import Products from './components/Product'; // Change import to match component name
 
-function App() {
-  const itemtwoName="Ghadi";
+const App = () => {
+  const products = [
+    {
+      id: 'p1',
+      title: 'Nirma',
+      amount: 100,
+      date: new Date(2021, 7, 10), // August (months are 0-11)
+    },
+    {
+      id: 'p2',
+      title: 'Surf Excel',
+      amount: 200,
+      date: new Date(2021, 1, 2), // February
+    },
+    {
+      id: 'p3',
+      title: 'Tide',
+      amount: 130,
+      date: new Date(2021, 11, 28), // December
+    },
+    {
+      id: 'p4',
+      title: 'Maggi',
+      amount: 450,
+      date: new Date(2021, 4, 5), // May
+    },
+  ];
+
   return (
-    <div>
-      <Item name="Nirma">Hello mai hu first item ki name</Item>
-      <ItemDate date="20" month="June" year="1973">Hello mai hu first item ki manufacturing date</ItemDate>
-
-      <Item name={itemtwoName}></Item>
-      <ItemDate date="10" month="July" year="1978"></ItemDate>
-
-      <Item name="Surf Excel"></Item>
-      <ItemDate date="5" month="January" year="1983"></ItemDate>
-      
-    <div className="App">
-      Hello React
+    <div className="App"> {/* Add className to apply your CSS */}
+      <Products items={products} />
     </div>
-    </div>
-    
   );
 }
 
